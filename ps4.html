@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- mod from https://github.com/GamerHack/ps4jb900 -->
+<html manifest="cache.manifest"><head>
+	<title>PS4 9.00 Hack</title>
+	<style>
+		html, body {
+			background-image: linear-gradient(180deg, #000000 0%, #242423 50%);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-color: #000000;
+			color: white;
+			text-align: center;
+			margin: 0px;
+			overflow: hidden;
+		}
+		h1 {
+			text-shadow: 0.1em 0.1em 0.2em black;
+			font-size: 25px;
+			text-align: center;
+			color: white;
+		}
+		h2 {
+			background: linear-gradient(0.50turn, #000000, #3e403f, #000000);
+			font-size: 25px;
+			color: yellow;
+		}
+		h3{
+			border-top: 8px dashed red;
+			text-align: center;
+			}
+		h4{
+			border-top: 2px dashed white;
+			}
+}
+	</style>
+	<script src="./ps4-scripts/int64.js"></script>
+	<script src="./ps4-scripts/rop.js"></script>
+	<script src="./ps4-scripts/kexploit.js"></script>
+	<script src="./ps4-scripts/webkit.js"></script>
+</head>
+<body>
+	<script>
+		function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
+		function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Installed Successfully ✔";},1000);setTimeout(function(){window.msgs.innerHTML="Now Close And Re-Open Your Browser ...";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+	</script>
+	<h1 id="msgs">PS4 9.00 Hack</h1>
+	<h4>
+	<h3>
+	<h2>*** WARNING - Never start or reboot the PS4 while the hacked USB pen drive is still connected to the PS4 USB slot ***</h2>
+	<h3>
+	<h4>
+	<script>
+		function allset(){
+			setTimeout(location.reload,1000);
+			alert("Payload Loaded... You will get a Memory Error, Press OK after that");
+			msgs.innerHTML= LoadedMSG;
+		}
+		
+		function awaitpl(){
+			setTimeout(location.reload,1000);
+			alert("Jailbreak Loaded... Now Send a Payload using the PS4 IP and port 9020");
+			msgs.innerHTML="Wait a Moment...";
+		}
+
+		function load_goldhen(){
+			var script = document.createElement('script');script.src = "./ps4-scripts/goldhen.js";document.getElementsByTagName('head')[0].appendChild(script);
+			msgs.innerHTML="Loading PS4 Jailbreak + GoldHEN - Please wait until you are told to insert the USB pen drive!"
+			LoadedMSG="GoldHEN Loaded...";
+			run_jb = "payload";
+			setTimeout(poc,1500);
+		}
+		
+		function load_binloader(){
+			msgs.innerHTML="Loading Jailbreak + Bin Loader... Please Wait !!!";
+			run_jb = "binloader";
+			setTimeout(poc,1500);
+		}
+	</script>
+	<!-- starfield effect under here -->
+	<canvas
+    id="canvas"
+    style="width: 100%; height: 100%; padding: 0;margin: 0;"
+  ></canvas>
+  <script>
+    const canvas = document.getElementById("canvas");
+    const c = canvas.getContext("2d");
+
+    let w;
+    let h;
+
+    const setCanvasExtents = () => {
+      w = document.body.clientWidth;
+      h = document.body.clientHeight;
+      canvas.width = w;
+      canvas.height = h;
+    };
+
+    setCanvasExtents();
+
+    window.onresize = () => {
+      setCanvasExtents();
+    };
+
+    const makeStars = count => {
+      const out = [];
+      for (let i = 0; i < count; i++) {
+        const s = {
+          x: Math.random() * 1600 - 800,
+          y: Math.random() * 900 - 450,
+          z: Math.random() * 1000
+        };
+        out.push(s);
+      }
+      return out;
+    };
+
+    let stars = makeStars(10000);
+
+    const clear = () => {
+      c.fillStyle = "black";
+      c.fillRect(0, 0, canvas.width, canvas.height);
+    };
+
+    const putPixel = (x, y, brightness) => {
+      const intensity = brightness * 255;
+      const rgb = "rgb(" + intensity + "," + intensity + "," + intensity + ")";
+      c.fillStyle = rgb;
+      c.fillRect(x, y, 1, 1);
+    };
+
+    const moveStars = distance => {
+      const count = stars.length;
+      for (var i = 0; i < count; i++) {
+        const s = stars[i];
+        s.z -= distance;
+        while (s.z <= 1) {
+          s.z += 1000;
+        }
+      }
+    };
+
+    let prevTime;
+    const init = time => {
+      prevTime = time;
+      requestAnimationFrame(tick);
+    };
+
+    const tick = time => {
+      let elapsed = time - prevTime;
+      prevTime = time;
+
+      moveStars(elapsed * 0.1);
+
+      clear();
+
+      const cx = w / 2;
+      const cy = h / 2;
+
+      const count = stars.length;
+      for (var i = 0; i < count; i++) {
+        const star = stars[i];
+
+        const x = cx + star.x / (star.z * 0.001);
+        const y = cy + star.y / (star.z * 0.001);
+
+        if (x < 0 || x >= w || y < 0 || y >= h) {
+          continue;
+        }
+
+        const d = star.z / 1000.0;
+        const b = 1 - d * d;
+
+        putPixel(x, y, b);
+      }
+
+      requestAnimationFrame(tick);
+    };
+
+    requestAnimationFrame(init);
+  </script>  
+  <!-- Just autoload payload under here -->
+	load_goldhen();
+</body>
+</html>
