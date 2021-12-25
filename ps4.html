@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- mod from https://gamerhack.github.io/ps4jb900/ -->
-<html manifest="cache.manifest"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- mod from https://github.com/GamerHack/ps4jb900 -->
+<html manifest="cache.manifest"><head>
 	<title>PS4 9.00 Hack</title>
 	<style>
 		html, body {
@@ -55,6 +55,10 @@
 	<script src="./ps4-scripts/webkit.js"></script>
 </head>
 <body>
+	<script>
+		function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
+		function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Installed Successfully ✔";},1000);setTimeout(function(){window.msgs.innerHTML="Now Close And Re-Open Your Browser ...";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+	</script>
 	<h1 id="msgs">PS4 9.00 Hack</h1>
 	<hr>
 	<br>
