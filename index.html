@@ -69,8 +69,7 @@
 	<br>
 	<hr>
 	<button class="button button3" onclick=load_dumper()> Game Dumper </button>
-	<button class="button button2" onclick=load_binloader()> Bin Loader </button>
-	<button class="button button4" onclick=load_webrte()> Cheats </button>
+	<!--<button class="button button2" onclick=load_binloader()> Bin Loader </button>-->
 	<button class="button button1" onclick=load_goldhen()> GoldHEN </button>
 	<hr>
 	<canvas
@@ -103,14 +102,6 @@
 			var script = document.createElement('script');script.src = "./ps4-scripts/app-dumper.js";document.getElementsByTagName('head')[0].appendChild(script);
 			msgs.innerHTML="Loading Dumper... Please Wait !!!"
 			LoadedMSG="Dumper Loaded...";
-			run_jb = "payload";
-			setTimeout(poc,1500);
-		}
-		
-		function load_webrte(){
-			var script = document.createElement('script');script.src = "./ps4-scripts/WebRTE.js";document.getElementsByTagName('head')[0].appendChild(script);
-			msgs.innerHTML="Loading Web Cheats... Please Wait !!!"
-			LoadedMSG="Web Cheats Loaded...";
 			run_jb = "payload";
 			setTimeout(poc,1500);
 		}
@@ -153,7 +144,7 @@
       return out;
     };
 
-    let stars = makeStars(180);
+    let stars = makeStars(160);
 
     const clear = () => {
       c.fillStyle = "black";
