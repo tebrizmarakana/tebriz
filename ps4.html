@@ -46,6 +46,8 @@
 		
 		.button1 {background-color: #008CBA;} /* Blue */
 		.button2 {background-color: #00bf33;} /* Green */
+		.button3 {background-color: #4f00cf;} /* Purple */
+		.button4 {background-color: #9e00cf;} /* Pink */
 		
 	</style>
 	<script src="./ps4-scripts/int64.js"></script>
@@ -66,7 +68,9 @@
 	<h3>
 	<br>
 	<hr>
+	<button class="button button3" onclick=load_dumper()> Game Dumper </button>
 	<button class="button button2" onclick=load_binloader()> Bin Loader </button>
+	<button class="button button4" onclick=load_webrte()> Cheats </button>
 	<button class="button button1" onclick=load_goldhen()> GoldHEN </button>
 	<hr>
 	<canvas
@@ -95,8 +99,24 @@
 			setTimeout(poc,1500);
 		}
 		
+		function load_dumper(){
+			var script = document.createElement('script');script.src = "./ps4-scripts/app-dumper.js";document.getElementsByTagName('head')[0].appendChild(script);
+			msgs.innerHTML="Loading Dumper... Please Wait !!!"
+			LoadedMSG="Dumper Loaded...";
+			run_jb = "payload";
+			setTimeout(poc,1500);
+		}
+		
+		function load_webrte(){
+			var script = document.createElement('script');script.src = "./ps4-scripts/WebRTE.js";document.getElementsByTagName('head')[0].appendChild(script);
+			msgs.innerHTML="Loading Web Cheats... Please Wait !!!"
+			LoadedMSG="Web Cheats Loaded...";
+			run_jb = "payload";
+			setTimeout(poc,1500);
+		}
+		
 		function load_binloader(){
-			msgs.innerHTML="Loading Jailbreak + Bin Loader... Please Wait !!!";
+			msgs.innerHTML="Loading Bin Loader... Please Wait !!!";
 			run_jb = "binloader";
 			setTimeout(poc,1500);
 		}
