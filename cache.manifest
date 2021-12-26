@@ -2,7 +2,6 @@ CACHE MANIFEST
 
 CACHE: 
 index.html
-ps4.html
 ./ps4-scripts/goldhen.js
 ./ps4-scripts/int64.js
 ./ps4-scripts/kexploit.js
