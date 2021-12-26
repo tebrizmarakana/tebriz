@@ -8,3 +8,5 @@ ps4.html
 ./ps4-scripts/kexploit.js
 ./ps4-scripts/rop.js
 ./ps4-scripts/webkit.js
+./ps4-scripts/WebRTE.js
+./ps4-scripts/app-dumper.js
