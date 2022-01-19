@@ -8,3 +8,4 @@ index.html
 ./ps4-scripts/rop.js
 ./ps4-scripts/webkit.js
 ./ps4-scripts/app-dumper.js
+./ps4-scripts/patch.s
