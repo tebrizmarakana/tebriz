@@ -56,7 +56,7 @@
 "downloader_name":"",
 "enable_install_player":false,
 "enable_download_adm":false,
-"title_player":"",
+"title_player":"vlc",
 "description_player":"",
 "link_download_player":"",
 "package_name_player":"",
