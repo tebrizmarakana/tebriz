@@ -59,7 +59,7 @@
 "title_player":"vlc",
 "description_player":"",
 "link_download_player":"",
-"package_name_player":"",
+"package_name_player":"org.videolan.vlc",
 "enable_amz":false,
 "adoech_enable":false,
 "oneplayer_version_build":"47",
