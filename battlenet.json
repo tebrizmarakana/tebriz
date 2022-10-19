@@ -5,7 +5,7 @@
 "survey_type": "",  
 "survey_link": "",  
 "left_menu_image":"https://i.imgur.com/7BIRu4g.png",  
-"lite_mode":true,
+"lite_mode":false,
 "content_not_support_audio":"This movie has audio which is not supported by BeeTV, please install VLC player to play audio.",  
 "package_not_support_audio":"org.videolan.vlc",  
 "link_not_audio":"https://archive.org/download/org.videolan.vlc_3.1.7-13010707_minapi17arm64-v8anodpi_apkmirror.com/vlc317.apk",  
