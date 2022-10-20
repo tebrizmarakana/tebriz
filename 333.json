@@ -8,29 +8,29 @@
 "lite_mode":false,
 "content_not_support_audio":"This movie has audio which is not supported by BeeTV, please install VLC player to play audio.",  
 "package_not_support_audio":"org.videolan.vlc",  
-"link_not_audio":"https://archive.org/download/org.videolan.vlc_3.1.7-13010707_minapi17arm64-v8anodpi_apkmirror.com/vlc317.apk",  
+"link_not_audio":"https://archive.org/download/vlc_v3.5.2_org.videolan.vlc/vlc_v3.5.2_org.videolan.vlc.apk",  
 "update_isforce":false,  
-"update_isapk":false,  
+"update_isapk":true,  
 "update_title":"Update new version",  
 "update_content":"You cant update if you are using modded version. Please use official version on our homepage(beetvapk.me) to support developer.
 <br></br>
 <b>Release Info</b>
-<br>- Version: 3.3.2</br>
+<br>- Version: 3.3.3</br>
 <br>- Size: 19.3MB</br>
 <br></br>
 <br><b>Change logs</b></br>
 <br>- Filter English movies and tv shows.</br>
 <br>- Add links.</br>",  
-"update_build":"145",  
-"update_version":"3.3.2",  
+"update_build":"146",  
+"update_version":"3.3.3",  
 "update_link":"",  
 "update_link_android4":"",
-"pkg_uninstall":"com.medianet.gl",  
+"pkg_uninstall":"",  
 "link_downloader":"",
 "pkg_uninstall_247":"",
-"pkg_uninstall_257":"com.battlenet.showguide",
-"pkg_uninstall_261":"com.sunset.collage",  
-"pkg_uninstall_278":"com.battlebot.dday",  
+"pkg_uninstall_257":"",
+"pkg_uninstall_261":"",  
+"pkg_uninstall_278":"",  
 "pkg_uninstall_content":"Please uninstall old version. You can restart app to get your watchlist back.",
 "http_config":"https",
 "gg_analytics_key":"",  
@@ -56,9 +56,9 @@
 "downloader_name":"",
 "enable_install_player":false,
 "enable_download_adm":false,
-"title_player":"vlc",
-"description_player":"",
-"link_download_player":"",
+"title_player":"VLC",
+"description_player":"Video Lan Client",
+"link_download_player":"https://archive.org/download/vlc_v3.5.2_org.videolan.vlc/vlc_v3.5.2_org.videolan.vlc.apk",
 "package_name_player":"org.videolan.vlc",
 "enable_amz":false,
 "adoech_enable":false,
