@@ -1,4 +1,4 @@
-import { loadMod } from './loader.js';
+import { loadMod } from 'https://mrdude2478.github.io/loader.js';
 
 const AUDIO = Symbol('audio');
 const GAIN = Symbol('gain');
@@ -26,7 +26,7 @@ export class ModPlayer {
         if (!this[AUDIO]) this[AUDIO] = new AudioContext();
         this[GAIN] = this[AUDIO].createGain();
         this[GAIN].gain.value = 0.3;
-        await this[AUDIO].audioWorklet.addModule('./mod-player-worklet.js');
+        await this[AUDIO].audioWorklet.addModule('https://mrdude2478.github.io/mod-player-worklet.js');
         this[WORKLET] = new AudioWorkletNode(this[AUDIO], 'mod-player-worklet');
         this[WORKLET].connect(this[GAIN]).connect(this[AUDIO].destination);
 
