@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>PS4-Hack</title>
+    <link rel='stylesheet' href='./css/index.css'>
+    <script>
+        function showMessage(msg) {
+            document.getElementById("message").innerHTML = "<h1></h1>" + msg + "<h1></h1>";
+            document.getElementById("message").style.display = 'block';
+        }
+        var payloadFile = './goldhen.bin';
+        var payloadTitle = 'GoldHEN';
+        if (window.applicationCache.status == '0') {
+            window.location.replace("./cache.html");
+        }
+    </script>
+    <script type='module' src='./alert.mjs'></script>
+</head>
+<body>
+    <div class="info" id="message"><h1></h1>Please wait, Lapse exploit is starting!<h1></h1></div>
+</body>
+</html>
