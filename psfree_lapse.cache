@@ -7,7 +7,7 @@ config.mjs
 index.html
 lapse.mjs
 psfree.mjs
-goldhen.bin
+ps4-hen-900-vtx.bin
 kpatch\900.elf
 module\chain.mjs
 module\constants.mjs
